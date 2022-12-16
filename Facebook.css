@@ -14,41 +14,45 @@ body {
   grid-area: TopPage01;
   position: fixed;
   margin-top: 0;
-  background-color: brown;
+  background-color: #FFFFFF;
   width: 100%;
   height: 56px;
   overflow: hidden;
+  box-shadow: 5px 5px 10px 0px #888888;
   z-index: 4;
 }
 #LeftPage {
   grid-area: LeftPage01;
   position: fixed;
-  background-color: black;
-  color: white;
-  overflow: scroll;
+  padding-top: 1.7%;
+  background-color: #ecf3ff;
+  overflow-x: hidden; /*Vertical Scrollbar*/
+  overflow-y: scroll; /*Horizontal Scrollbar*/
   margin-top: 56px;
   width: 0px;
   height: 0px;
-  z-index: 2;
+  z-index: 1;
 }
 #RightPage {
   grid-area: RightPage01;
   position: fixed;
-  background-color: aquamarine;
-  overflow: scroll;
+  padding-top: 1.7%;
+  background-color: #ecf3ff;
+  overflow-y: scroll;
   margin: 56px 0 0 75%; /*To find accurate margin-left, calculate from grid-template-areas of #Page*/
   width: 0px;
   height: 0px;
-  z-index: 3;
+  z-index: 2;
 }
 #MainPage {
   grid-area: MainPage01;
-  background-color: yellow;
+  padding-top: 1.7%;
+  background-color: #ecf3ff;
   margin-top: 56px;
   height: 2000px;
   width: 0px;
   word-wrap: break-word;
-  z-index: 1;
+  z-index: 3;
   /*height is set 0 because height of main page depends upon content of it*/
 }
 
