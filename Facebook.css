@@ -3,7 +3,7 @@ body {
   padding: 0px;
 }
 #Page {
-  width: 100vw;
+  width: 98.85vw; /*100vw not possible because of presence of scrollbar*/
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -24,6 +24,7 @@ body {
   grid-area: LeftPage01;
   position: fixed;
   background-color: black;
+  color: white;
   overflow: scroll;
   margin-top: 56px;
   width: 0px;
@@ -45,6 +46,7 @@ body {
   background-color: yellow;
   margin-top: 56px;
   height: 2000px;
+  width: 0px;
   word-wrap: break-word;
   z-index: 1;
   /*height is set 0 because height of main page depends upon content of it*/
@@ -68,5 +70,13 @@ body {
   #RightPage {
     height: calc(100vh - 56px);
     width: 25%;
+  }
+  #MainPage {
+    width: 75%;
+  }
+}
+@media (max-width: 900px){
+  #MainPage{
+    width: 100%;
   }
 }
