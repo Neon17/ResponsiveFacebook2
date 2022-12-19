@@ -3,7 +3,7 @@ body {
   padding: 0px;
 }
 #Page {
-  width: 98.85vw; /*100vw not possible because of presence of scrollbar*/
+  width: 98.71vw; /*100vw not possible because of presence of scrollbar*/
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -11,10 +11,11 @@ body {
 
 /*All this Pages are made width 0px height 0px to ensure cascading in media queries*/
 #TopPage {
-  grid-area: TopPage01;
   position: fixed;
   margin-top: 0;
-  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
   width: 100%;
   height: 56px;
   overflow: hidden;
@@ -22,23 +23,21 @@ body {
   z-index: 4;
 }
 #LeftPage {
-  grid-area: LeftPage01;
   position: fixed;
-  padding-top: 1.7%;
   background-color: #ecf3ff;
+  padding-top: 1rem;
   overflow-x: hidden; /*Vertical Scrollbar*/
-  overflow-y: scroll; /*Horizontal Scrollbar*/
+  overflow-y: hidden; /*Horizontal Scrollbar*/
   margin-top: 56px;
   width: 0px;
   height: 0px;
   z-index: 1;
 }
 #RightPage {
-  grid-area: RightPage01;
   position: fixed;
-  padding-top: 1.7%;
   background-color: #ecf3ff;
-  overflow-y: scroll;
+  padding-top: 1rem;
+  overflow-y: hidden;
   margin: 56px 0 0 75%; /*To find accurate margin-left, calculate from grid-template-areas of #Page*/
   width: 0px;
   height: 0px;
@@ -46,7 +45,6 @@ body {
 }
 #MainPage {
   grid-area: MainPage01;
-  padding-top: 1.7%;
   background-color: #ecf3ff;
   margin-top: 56px;
   height: 2000px;
@@ -56,31 +54,123 @@ body {
   /*height is set 0 because height of main page depends upon content of it*/
 }
 
+/*LeftPageStart, RightPageStart and MainPageStart*/
+.FixedPageStart {
+  margin-top: 0.5rem;
+  margin-left: 1%;
+  margin-right: 1%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: aquamarine;
+  height: 95%;
+  min-height: 720px;
+}
+.ContentPageStart {
+  margin: 1.5rem 1% 1% 1%;
+  background-color: aquamarine;
+}
+.FixedPageStart {
+  display: flex;
+  flex-direction: column;
+}
+.MainList {
+  height: 57%;
+  width: 100%;
+  background-color: green;
+}
+.LineBelowMainList {
+  height: 3%;
+  width: 100%;
+}
+.HorizontalLineLeftPage {
+  border: 0.5px solid black;
+  opacity: 0.2;
+}
+.LineBelowMainListAlign {
+  margin: 0 5.2% 0 3.8%;
+}
+.ShortcutList {
+  height: 35%;
+  width: 100%;
+  background-color: greenyellow;
+}
+.footer {
+  height: 5%;
+  width: 100%;
+  background-color: yellow;
+}
+.RightPageTopic {
+  height: 5%;
+  background-color: yellow;
+}
+.RightPageContent {
+  height: 95%;
+  background-color: yellowgreen;
+}
+
 @media only screen and (min-width: 1100px) {
-    #LeftPage {
-    height: calc(100vh - 56px);
+  #LeftPage {
     width: 25%;
   }
   #RightPage {
-    height: calc(100vh - 56px);
     width: 25%;
   }
   #MainPage {
     margin-left: 25%;
     width: 50%;
   }
+  .ContentPageStart {
+    height: 97%;
+  }
 }
 @media (min-width: 900px) and (max-width: 1100px) {
   #RightPage {
-    height: calc(100vh - 56px);
     width: 25%;
   }
   #MainPage {
     width: 75%;
   }
+  .ContentPageStart {
+    height: 97%;
+  }
 }
-@media (max-width: 900px){
-  #MainPage{
+@media (max-width: 900px) {
+  #MainPage {
     width: 100%;
+  }
+  .ContentPageStart {
+    height: 97%;
+  }
+}
+
+/*For Title Bar*/
+@media only screen and (min-width: 701px){
+  .LeftTopPage {
+    width: 25%;
+    background-color: aqua;
+    justify-items: flex-start;
+  }
+  .MidTopPage{
+    justify-items: center;
+    width: 50%;
+    background-color: beige;
+  }
+  .RightTopPage {
+    width: 25%;
+    background-color: aquamarine;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 701px){
+  .MidTopPage {
+    visibility: none;
+  }
+  .LeftTopPage {
+    width: 50%;
+    background-color: beige;
+  }
+  .RightTopPage {
+    width: 50%;
+    background-color: aquamarine;
   }
 }
