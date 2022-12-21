@@ -54,6 +54,75 @@ body {
   /*height is set 0 because height of main page depends upon content of it*/
 }
 
+/*Aligning Elements*/
+.AlignLeftTopPage {
+  height: 98%;
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 0.3%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.AlignMidTopPage {
+  /*No margin*/
+  display: flex;
+  justify-content: center;
+}
+.AlignRightTopPage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*Top Page Configuration*/
+.FacebookLogo {
+  width: 15%;
+  height: 95%;
+  padding: 5% 0% 0% 5%;
+}
+.FacebookLogoPicture {
+  width: 80%;
+  height: 75%;
+}
+.SearchBox {
+  width: 85%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.SearchFirstPart {
+  background-color: #ecf3ff;
+  border-radius: 50% 0% 0% 50%;
+  height: 80%;
+  width: 10%;
+  margin: 0 0 0 0;
+}
+.SearchLastPart {
+  height: 80%;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.SearchBoxItem {
+  height: 80%;
+}
+#SearchIcon {
+  margin: 42% 0 0 30%;
+  width: 52%;
+  height: 40%;
+}
+#SearchInputText {
+  background-color: #ecf3ff;
+  border: 0px;
+  padding: 0px 0px 0px 2%;
+  margin: 0 0 0 0;
+  border-radius: 0% 20% 20% 0%;
+  font-size: 12pt;
+  height: 100%;
+}
+
+
 /*LeftPageStart, RightPageStart and MainPageStart*/
 .FixedPageStart {
   margin-top: 0.5rem;
@@ -74,7 +143,7 @@ body {
   flex-direction: column;
 }
 .MainList {
-  height: 57%;
+  height: 65%;
   width: 100%;
   background-color: green;
 }
@@ -90,7 +159,7 @@ body {
   margin: 0 5.2% 0 3.8%;
 }
 .ShortcutList {
-  height: 35%;
+  height: 27%;
   width: 100%;
   background-color: greenyellow;
 }
@@ -148,22 +217,19 @@ body {
   .LeftTopPage {
     width: 25%;
     background-color: aqua;
-    justify-items: flex-start;
   }
   .MidTopPage{
-    justify-items: center;
     width: 50%;
     background-color: beige;
   }
   .RightTopPage {
     width: 25%;
     background-color: aquamarine;
-    justify-content: flex-end;
   }
 }
 @media only screen and (max-width: 701px){
   .MidTopPage {
-    visibility: none;
+    display: none;
   }
   .LeftTopPage {
     width: 50%;
@@ -172,5 +238,8 @@ body {
   .RightTopPage {
     width: 50%;
     background-color: aquamarine;
+  }
+  .SearchLastPart {
+    display: none;
   }
 }

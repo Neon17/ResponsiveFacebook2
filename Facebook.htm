@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,38 @@
     <link rel="stylesheet" href="Facebook.css">
     <script src="Facebook.js"></script>
 </head>
+
 <body>
     <div id="Page">
         <div id="TopPage" class="PageDivision">
             <section class="LeftTopPage">
-                <div class="FacebookLogo"></div>
-                <div class="SearchFirstPart"></div> <!-- Search Logo -->
-                <div class="SearchLastPart"></div> <!-- Search text -->
+                <section class="AlignLeftTopPage">
+                    <section class="FacebookLogo">
+                        <img src="Facebook-logo.png" alt="" class="FacebookLogoPicture">
+                    </section>
+                    <section class="SearchBox">
+                        <section class="SearchFirstPart">
+                            <img src="Search-icon.png" alt="" id="SearchIcon" class="SearchBoxItem">
+                        </section> <!-- Search Logo -->
+                        <section class="SearchLastPart">
+                            <input type = "text" id="SearchInputText" placeholder="Search Friends" class="SearchBoxItem">
+                        </section> <!-- Search text -->
+                    </section>
+                </section>
             </section>
-            <section class="MidTopPage"></section>
-            <section class="RightTopPage"></section>
+            <section class="MidTopPage">
+                <section class="AlignMidTopPage"></section>
+            </section>
+            <section class="RightTopPage">
+                <section class="AlignRightTopPage"></section>
+            </section>
         </div>
         <div id="LeftPage" class="PageDivision">
             <div class="FixedPageStart">
                 <section class="MainList"></section>
                 <section class="LineBelowMainList">
                     <section class="LineBelowMainListAlign">
-                        <hr class = "HorizontalLineLeftPage">
+                        <hr class="HorizontalLineLeftPage">
                     </section>
                 </section>
                 <section class="ShortcutList"></section>
@@ -32,12 +48,12 @@
             </div>
         </div>
         <div id="MainPage" class="PageDivision">
-            <div class="ContentPageStart"></div>
-        </div>  
+            <div class="ContentPageStart">News Feed</div>
+        </div>
         <div id="RightPage" class="PageDivision">
             <div class="FixedPageStart">
                 <section class="RightPageTopic">
-                    <div class="contacts"></div>
+                    <div class="contacts">Contacts</div>
                     <div class="ReelsIcon"></div>
                     <div class="SearchIcon"></div>
                     <div class="ThreeDots"></div>
@@ -47,4 +63,5 @@
         </div>
     </div>
 </body>
+
 </html>
