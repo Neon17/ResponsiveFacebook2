@@ -131,9 +131,11 @@ body {
 
 /*Mid Top Page Configuration*/
 .MidTopPageItem {
-  width: 17%;
+  width: 16%;
   height: 100%;
   display: flex;
+  margin-right: 1%;
+  flex-direction: column;
   background-color: #888888;
 }
 
@@ -145,6 +147,39 @@ body {
 }
 
 
+/*MidTop Page Configuration*/
+.MidTopMain {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf3ff;
+}
+.BlueBarWhenClicked {
+  height: 5%;
+  width: 100%;
+  background-color: blue;
+  border-radius: 7%;
+}
+.MidTopMainCentralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  width: 90%;
+  border-radius: 5%;
+}
+.MidTopMainCentralize:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+.MidTopMainLogos {
+  width: 27%;
+  height: 57%;
+}
+
+
 /*Left Page Configuration*/
 #LeftPage .FixedPageStart .MainList .MainListAlign {
   display: flex;
@@ -152,7 +187,6 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  background-color: #888888;
 }
 #LeftPage .FixedPageStart .MainList .MainListAlign .MainListItem {
   height: 9.5%;
@@ -183,13 +217,19 @@ body {
 .MainListItemImageCollection {
   width: 20%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .LeftMainListImage {
-  width: 80%;
-  height: 100%;
+  width: 41%;
+  height: 63%;
 }
 
 /*Left Fixed Page Shortcut Configuration*/
+.ShortcutList {
+  font-weight: 400;
+}
 .ShortcutListItem {
   display: flex;
   align-items: center;
@@ -202,21 +242,28 @@ body {
   width: 80%;
   height: 100%;
 }
+.LeftShortcutListDescribe {
+  font-weight: 550;
+}
+.footer {
+  font-weight: 400;
+}
 
 /*LeftPageStart, RightPageStart and MainPageStart*/
 .FixedPageStart {
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 0.5rem;
   margin-left: 1%;
   margin-right: 1%;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: aquamarine;
   height: 95%;
+  font-weight: 550;
+  font-size: 11pt;
   min-height: 720px;
 }
 .ContentPageStart {
   margin: 1.5rem 1% 1% 1%;
-  background-color: aquamarine;
 }
 .FixedPageStart {
   display: flex;
@@ -225,7 +272,6 @@ body {
 .MainList {
   height: 65%;
   width: 100%;
-  background-color: green;
 }
 .LineBelowMainList {
   height: 3%;
@@ -241,12 +287,10 @@ body {
 .ShortcutList {
   height: 27%;
   width: 100%;
-  background-color: greenyellow;
 }
 .footer {
   height: 5%;
   width: 100%;
-  background-color: yellow;
 }
 .RightPageTopic {
   height: 5%;
@@ -256,14 +300,20 @@ body {
 .RightPageContent {
   height: 95%;
   width: 100%;
-  background-color: yellowgreen;
 }
 
 /*Right Page Configuration*/
 .RightPageContentAlign {
   margin: 0 0 0 0%;
   width: 100%;
-  background-color: antiquewhite;
+  height: 100%;
+}
+.ContactsListItem {
+  width: 90%;
+  height: 8%;
+  background-color: aliceblue;
+  margin-top: 2%;
+  margin-left: 2%;
 }
 
 @media only screen and (min-width: 1100px) {
