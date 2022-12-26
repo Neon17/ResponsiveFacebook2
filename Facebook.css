@@ -189,6 +189,7 @@ body {
   height: 100%;
 }
 
+/*Left Fixed Page Shortcut Configuration*/
 .ShortcutListItem {
   display: flex;
   align-items: center;
@@ -249,11 +250,20 @@ body {
 }
 .RightPageTopic {
   height: 5%;
+  width: 100%;
   background-color: yellow;
 }
 .RightPageContent {
   height: 95%;
+  width: 100%;
   background-color: yellowgreen;
+}
+
+/*Right Page Configuration*/
+.RightPageContentAlign {
+  margin: 0 0 0 0%;
+  width: 100%;
+  background-color: antiquewhite;
 }
 
 @media only screen and (min-width: 1100px) {
