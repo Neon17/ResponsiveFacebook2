@@ -155,26 +155,51 @@ body {
   background-color: #888888;
 }
 #LeftPage .FixedPageStart .MainList .MainListAlign .MainListItem {
-  height: 8%;
+  height: 9.5%;
   width: 100%;
   background-color: #ffffff;
+  display: flex;
   margin-top: 2%;
-  margin-bottom: 2%;
 }
 #LeftPage .FixedPageStart .MainList .MainListAlign .MainListItem:hover {
   cursor: pointer;
   background-color: #55797a;
 }
 .ShortcutList .ShortcutListItem {
-  height: 20%;
+  height: 25%;
   width: 100%;
   background-color: #ffffff;
   margin-top: 2%;
-  margin-bottom: 2%;
 }
 .ShortcutList .ShortcutListItem:hover {
   cursor: pointer;
   background-color: #55797a;
+}
+
+/*Left Top Page Configuration*/
+.MainListItem {
+  align-items: center;
+}
+.MainListItemImageCollection {
+  width: 20%;
+  height: 100%;
+}
+.LeftMainListImage {
+  width: 80%;
+  height: 100%;
+}
+
+.ShortcutListItem {
+  display: flex;
+  align-items: center;
+}
+.ShortcutListItemImageCollection {
+  width: 20%;
+  height: 100%;
+}
+.LeftShortcutListImage {
+  width: 80%;
+  height: 100%;
 }
 
 /*LeftPageStart, RightPageStart and MainPageStart*/
