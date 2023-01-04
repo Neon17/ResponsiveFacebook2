@@ -189,7 +189,22 @@
             </div>
         </div>
         <div id="MainPage" class="PageDivision">
-            <div class="ContentPageStart">News Feed</div>
+            <div id="MainContentPageStart" class="ContentPageStart">
+                
+                <div id="TopicPageMain" class="NewsFeedPages"></div>
+                <div id="MainMindPage" class="NewsFeedPages"></div>
+
+                <!-- These are for the normal pages of news feed -->
+                <div class="PagesMainNormalMiddle NewsFeedPages">
+                    The height is based on content of this news feed
+                </div>
+
+                <!-- If the property overlaps, the last mentioned class overrides the first classes -->
+                <div class="NewsFeedPages PagesMainNormalMiddle"></div>
+                <div class="NewsFeedPages PagesMainNormalMiddle"></div>
+                <div class="NewsFeedPages PagesMainNormalMiddle"></div>
+                <div class="NewsFeedPages PagesMainNormalMiddle"></div>
+            </div>
         </div>
         <div id="RightPage" class="PageDivision">
             <div class="FixedPageStart">
