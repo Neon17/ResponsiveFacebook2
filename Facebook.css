@@ -143,8 +143,14 @@ body {
 .RightTopPageItem {
   width: 15%;
   height: 100%;
-  background-color: #888888;
+  padding-top: 5%;
 }
+.RightTopPageLogo {
+  width: 75%;
+  height: 70%;
+  opacity: 0.8;
+}
+.RightTopPageLogo:hover {cursor: pointer; opacity: 1;}
 
 
 /*MidTop Page Configuration*/
@@ -225,6 +231,7 @@ body {
   width: 41%;
   height: 63%;
 }
+
 
 /*Left Fixed Page Shortcut Configuration*/
 .ShortcutList {
