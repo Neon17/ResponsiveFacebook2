@@ -27,7 +27,7 @@ body {
   background-color: #ecf3ff;
   padding-top: 1rem;
   overflow-x: hidden; /*Vertical Scrollbar*/
-  overflow-y: hidden; /*Horizontal Scrollbar*/
+  overflow-y: scroll; /*Horizontal Scrollbar*/
   margin-top: 56px;
   width: 0px;
   height: 0px;
@@ -255,7 +255,7 @@ body {
   margin-top: 0.5rem;
   margin-left: 1%;
   margin-right: 1%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   height: 95%;
   font-weight: 550;
@@ -327,6 +327,9 @@ body {
 }
 
 /*Right Page Configuration*/
+#RightPageStart {
+  overflow-y: scroll;
+}
 .RightPageContentAlign {
   margin: 0 0 0 0%;
   width: 100%;
