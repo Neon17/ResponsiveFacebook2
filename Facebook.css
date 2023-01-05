@@ -345,10 +345,29 @@ body {
 .ContactsListItem {
   width: 90%;
   height: 8%;
-  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-top: 2%;
   margin-left: 2%;
 }
+.RightContactsListProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  opacity: 0.8;
+}
+.RightContactsListProfile:hover {cursor: pointer; opacity: 1; background-color: rgb(105, 112, 126);}
+.RightContactsListProfilePicture {
+  width: 15%;
+  text-align: center;
+}
+.RightCName {
+  width: 80%;
+}
+
 
 @media only screen and (min-width: 1100px) {
   #LeftPage {
