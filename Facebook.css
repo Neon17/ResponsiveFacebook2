@@ -309,6 +309,8 @@ body {
   width: 100%;
 }
 
+
+
 /*Main Page Configuration*/
 #MainPageContentStart {
   margin-top: 5%;
@@ -317,9 +319,111 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 #TopicPageMain {
-  height: 37vh;
+  height: 35.5vh;
+  display: flex;
+  flex-direction: column;
 }
+#StoriesReelsRoomsHolder {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 2%;
+  padding-right: 1%;
+  background-color: bisque;
+}
+.ContentStoriesReelsRooms {
+  width: 34%;
+  height: 100%;
+}
+.MainContentStoReeRoo {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  border-radius: 10%;
+}
+.MainContentStoReeRoo:hover {
+  cursor: pointer;
+  background-color: #55797a;
+}
+#StoriesStart {
+  margin-right: 1%;
+}
+#ReelsStart {
+  margin-right: 1%;
+}
+.StoReeRooPicture {
+  width: 20%;
+  height: 70%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: flex-end;
+}
+.StoReeRooName {
+  width: 30%;
+  height: 70%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+#LineBelowHolderMain {
+  height: 3px;
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
+  background-color: black;
+}
+.LineDrawHolderMain {
+  width: 33.33%;
+  height: 100%;
+}
+#PhotosUnderStories {
+  height: 79%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: greenyellow;
+}
+#PhotosStoriesAnchorLeft {
+  position: absolute;
+  margin-left: 0.5%;
+}
+#PhotosStoriesAnchorRight {
+  position: absolute;
+  margin-left: 37%;
+}
+.AnchorPicture {
+  width: 30%;
+  height: 30%;
+  opacity: 0.4;
+}
+.AnchorPicture:hover {cursor: pointer; opacity: 1;}
+#AnchorPictureRight {
+  height: 27%;
+}
+.PhotosUnderStoriesAlign {
+  height: 93%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: hidden;
+  align-items: center;
+}
+.StoriesinNewsFeed {
+  height: 98%;
+  width: 18%;
+  border-radius: 5%;
+}
+
+
+
 #MainMindPage {
   height: 14vh;
 }
